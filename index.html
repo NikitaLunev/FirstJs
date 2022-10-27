@@ -11,15 +11,31 @@
 
 <body>
 
-  <ul id="slides" class="slides">
-    <li class="slide active">Slide 1</li>
-    <li class="slide">Slide 2</li>
-    <li class="slide">Slide 3</li>
-    <li class="slide">Slide 4</li>
-    <li class="slide">Slide 5</li>
-  </ul>
+  <div class="carousel" id="carousel">
 
-  <button id="pause">Pause</button>
+    <div id="slides" class="slides-container">
+      <div class="slide active">Slide 1</div>
+      <div class="slide">Slide 2</div>
+      <div class="slide">Slide 3</div>
+      <div class="slide">Slide 4</div>
+      <div class="slide">Slide 5</div>
+    </div>
+
+    <div class="controls" id="controls-container">
+      <div class="control control-pause" id="btn-pause">Pause</div>
+      <div class="control control-prev" id="btn-prev">Previous</div>
+      <div class="control control-next" id="btn-next">Next</div>
+    </div>
+
+    <div class="indicators" id="indicators-container">
+      <div class="indicator active" data-slide-to"0"></div>
+      <div class="indicator" data-slide-to"1"></div>
+      <div class="indicator" data-slide-to"2"></div>
+      <div class="indicator" data-slide-to"3"></div>
+      <div class="indicator" data-slide-to"4"></div>
+    </div>
+
+  </div>
 
   <script src="JS/main.js"></script>
 </body>

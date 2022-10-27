@@ -20,6 +20,8 @@ these make the slideshow work
   opacity: 0;
   z-index: -999;
   transition: opacity 0.25s;
+  max-height: 200px;
+  margin-top: 150px;
 }
 
 .active {
@@ -58,4 +60,40 @@ just for appearance; change whatever you want
 
 .slide:nth-of-type(5) {
   background: purple;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.slides {
+  margin-bottom: 1em;
+  user-select: none;
+}
+
+.indicators,
+.controls {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.indicator,
+.control {
+  background-color: #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  min-width: 100px;
+  min-height: 30px;
+  user-select: none;
+}
+
+.indicator.active {
+  background-color: tomato;
+  color: white;
 }
