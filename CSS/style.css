@@ -20,8 +20,8 @@ these make the slideshow work
   opacity: 0;
   z-index: -999;
   transition: opacity 0.25s;
-  max-height: 200px;
-  margin-top: 150px;
+  /* max-height: 200px;
+  margin-top: 150px; */
 }
 
 .active {
