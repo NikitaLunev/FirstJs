@@ -1,3 +1,7 @@
+const slider = new SwipeSlider("#mycarousel", ".item", 2000);
+
+slider.init();
+
 // const container = document.querySelector("#carousel");
 // const slides = container.querySelectorAll(".slide");
 // const indicatorsContainer = container.querySelector("#indicators-container");
